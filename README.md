@@ -1,48 +1,193 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/NJK_cPkH)
-# Template for Capstone
-이 레파지토리는 학생들이 캡스톤 프로젝트 결과물을 위한 레파지토리 생성시에 참고할 내용들을 담고 있습니다.
-1. 레파지토리 생성
-2. 레파지토리 구성
-3. 레파지토리 제출 
-4. README.md 가이드라인
-5. README.md 작성팁
+# _BEINUS_
+### | 순환하는 배터리, 함께하는 지구. Be In Us.
+<br>
+
+## 1. 프로젝트 소개
+💡 전기차 배터리의 **생산부터 재활용까지 전 과정을 투명하게 추적**하는 블록체인 기반 이력 관리 플랫폼 제안<br>
+💡 **채널 기반의 데이터 공유**로 민감한 정보를 보호하며, 이해관계자 간의 신뢰를 구축하는 안전한 공급망 관리 시스템 구현
+<br>
+
+--- 
+
+## 2. 팀 소개
+
+<div align="center">
+
+|  **팀원**  | **역할 소개**|
+| :------: |  ------ |
+| [<img src="https://github.com/sam-mae.png" height=100 width=100>](https://github.com/sam-mae) <br> **[이상명](https://github.com/sam-mae)** | - 블록체인 네트워크 구축 (Hyperledger Fabric)   <br> - 채널 설계 (Organization, Channel, Chaincode)|
+| [<img src="https://github.com/insang01.png" height=100 width=100> ](https://github.com/insang01) <br> **[황인준](https://github.com/insang01)** | - Backend 서버 개발 (Spring Boot) <br> - Rest API 설계 및 구축(Spring JPA) 개발 <br> - DataBase 설계 (MySQL)|
+| [<img src="https://github.com/0BackFlash0.png" height=100 width=100>](https://github.com/0BackFlash0) <br> **[김병진](https://github.com/0BackFlash0)** |  - UI 설계 및 디자인 <br> - 웹 퍼블리싱, 기능 구현 (React.js) |
+
+</div>
+
+
+
+<br>
 
 ---
 
-## 1. 레파지토리 생성
-- [https://classroom.github.com/a/NJK_cPkH](https://classroom.github.com/a/NJK_cPkH)
-- 위 Github Classroom 링크에 접속해 본인 조의 github 레파지토리를 생성하세요.
-<img src="https://github.com/user-attachments/assets/b5a7f34a-e146-4253-b57d-672737a75a50" alt="깃헙 클래스룸 레포 생성" width="600" />
+## 3. 시스템 구성
+### **| 전체 시스템 구조도**
+![전체 시스템 구성도](https://github.com/insang01/Weekly-Algorithm/blob/main/Total%20Design.drawio.png)
+- 채널과 Fabric MSP를 활용한 권한 처리를 통해 조직별 보안 강화
 
-- 레포지토리 생성 시 팀명은 `TEAM-{조 번호}` 형식으로 생성하세요.
-- 예를 들어, 2024년도 3조의 팀명은 `TEAM-03` 입니다.
-- 이 경우 `Capstone2024-TEAM-03`이란 이름으로 레파지토리가 생성됩니다.
+- 블록체인 네트워크를 활용해 배터리 제조 및 재활용 데이터의 무결성 보장
+<br>
+
+### **| 시스템 시나리오**
+![image](https://github.com/user-attachments/assets/ed117883-9582-4387-8db7-b2b4e774b54e)
+- 배터리 라이프사이클과 데이터 흐름 시각화
+
+- 배터리 제조, 유지보수, 재활용 과정을 정의하고 라이프사이클이 지속적으로 순환하도록 설계
+<br>
+
+### **| 백엔드 동작 과정**
+![전체 시스템 구성도](https://github.com/insang01/Weekly-Algorithm/blob/main/Backend.drawio.png)
+
+- Spring Boot, Spring Security JWT 활용한 회원가입, 로그인 구현
+
+<br>
+
+### **| 개발 환경**
+
+| 분야                        | 사용 기술 및 도구                                     |
+|:---------------------------:|------------------------------------------------------|
+| **Programming Languages**   | - Java 21.0.3 <br> - JavaScript 20.9.0 <br> - Go 1.20.4 |
+| **Framework**               | - React.js 18.3.1 <br> - Node.js 20.9.0 <br> - Spring 1.1.6 <br> - Spring Boot 3.1.2 <br> - Spring Security 6.3.1 <br> - Hyperledger Fabric 2.5.9 |
+| **DataBase**                | - MariaDB 11.4.2 <br> - H2 2.2.224 |
+| **Containerization Tools**                   | - Docker 24.0.6 <br> - Docker Compose 2.18.1  |
+| **Template Engine**         | - Thymeleaf 3.3.2 |
+| **Build Tool**              | - Gradle 8.8 |  
+
+<br>
+
 
 ---
 
-## 2. 레파지토리 구성
-- 레파지토리 내에 README.md 파일 생성하고 아래의 가이드라인과 작성팁을 참고하여 README.md 파일을 작성하세요. (이 레파지토리의 SAMPLE_README.md 참조)
-- 레파지토리 내에 docs 디렉토리를 생성하고 docs 디렉토리 내에는 과제 수행 하면서 작성한 각종 보고서, 발표자료를 올려둡니다. (이 레파지토리의 docs 디렉토리 참조)
-- 그 밖에 레파지토리의 폴더 구성은 과제 결과물에 따라 자유롭게 구성하되 가급적 코드의 목적이나 기능에 따라 디렉토리를 나누어 구성하세요.
+## **4. 소개 및 시연 영상**
+
+### **| 소개**
+
+|**이름**|**내용**|
+|:---:|:---:|
+| **메인 페이지** | ![image](https://github.com/user-attachments/assets/4f1150ba-ca93-4433-a02e-b8fff3aa052f)|
+| **로그인 페이지** | ![image](https://github.com/user-attachments/assets/9527c4db-a64e-4268-8e96-5408f257bb90) |
+| **회원가입 페이지** | ![image](https://github.com/user-attachments/assets/1b6a65a3-62df-41a4-8ed7-f35d989d808e)|
+| **원자재 목록 조회** | ![image](https://github.com/user-attachments/assets/f4344ba7-9e7f-4a28-8b7f-2cec4c49157e)| 
+| **원자재 상세 조회** | <![image](https://github.com/user-attachments/assets/23f959a3-2f51-42d4-826e-0dcb079897b1)| 
+| **배터리 목록 조회** | ![image](https://github.com/user-attachments/assets/a6de68f7-df12-4e9e-acb7-c75a3f1cff9d)| 
+| **배터리 상세 조회** |![image](https://github.com/user-attachments/assets/54298ad9-456f-4a7c-aada-2025ef0c0704)| 
+| **배터리 일반 정보 조회** |![image](https://github.com/user-attachments/assets/d7db4099-3473-41c4-9863-37180559c914)|
+| **배터리 구성 및 원자재 비율 조회** |![image](https://github.com/user-attachments/assets/9e3ab20e-d4db-4c55-beb9-eba43a3fda8c)| 
+| **정비 이력 조회**|![image](https://github.com/user-attachments/assets/f9aa95d2-cd49-40c4-9d5e-351f488a7e90)|
+
+<br>
+
+--- 
+
+## **5. 설치 및 사용법**
+본 프로젝트는 다음과 같은 단계에 따라 관련 패키지들의 설치와 빌드를 수행할 수 있습니다.
+
+### 1. Fabric 설치 및 샘플 다운로드
+
+```bash
+# Move to the directory where Fabric samples will be installed
+mkdir -p $HOME/go/src/github.com/<your_github_userid>
+cd $HOME/go/src/github.com/<your_github_userid>
+
+# Download Fabric samples, Docker images, and binaries
+curl -sSLO https://raw.githubusercontent.com/hyperledger/fabric/main/scripts/install-fabric.sh && chmod +x install-fabric.sh
+./install-fabric.sh d s b
+```
+### 2. Fabric Repository Clone
+
+```bash
+# Clone fabric2 inside of Fabric Sample 
+cd fabric-samples
+git clone "https://github.com/sam-mae/fabric2.git"
+cd ./fabric2
+```
+
+### 3. 환경 변수 설정
+
+```bash
+# Set Environment Variable
+export PATH=${PWD}/../bin:$PATH
+export FABRIC_CFG_PATH=$PWD/../config/
+```
+
+### 4. 네트워크 업로드, 채널 생성 및 배포
+
+```bash
+# Start the network and deploy
+./network.sh up -ca
+./network.sh createChannel -c public-channel
+./network.sh deployCCPublic -ccn public -ccp ./chaincode/public -ccl go -c public-channel
+
+# Additional PATH configuration
+export PATH=$PATH:$HOME/go/src/<your_github_userid>/<your folder>/fabric-samples/bin
+```
+
+### 5. 각 조직의 환경 변수 설정 및 인증서 발급
+
+```bash
+# Example: Set environment variables for org1 and register the user
+export FABRIC_CA_CLIENT_HOME=${PWD}/organizations/peerOrganizations/org1.example.com/
+export CORE_PEER_TLS_ENABLED=true
+export CORE_PEER_LOCALMSPID=Org1MSP
+export CORE_PEER_TLS_ROOTCERT_FILE=${PWD}/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt
+export CORE_PEER_MSPCONFIGPATH=${PWD}/organizations/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp
+export CORE_PEER_ADDRESS=localhost:7051
+
+# Register and issue a certificate for org1 user
+fabric-ca-client register --caname ca-org1 --id.name org1User --id.secret org1UserPW --id.type client --tls.certfiles ${PWD}/organizations/fabric-ca/org1/ca-cert.pem
+fabric-ca-client enroll -u https://org1User:org1UserPW@localhost:7054 --caname ca-org1 -M ${PWD}/organizations/peerOrganizations/org1.example.com/users/org1User@org1.example.com/msp --tls.certfiles ${PWD}/organizations/fabric-ca/org1/ca-cert.pem
+
+```
+
+### 6. API Server 설정
+
+```bash
+# Configure and start the API server
+cd backend
+npm install fabric-network fabric-ca-client express cors
+node registerIdentity.js
+node app.js
+
+# ! recommended to delete the wallet if necessary
+
+```
+
+### 7. Frontend setup and run
+
+```bash
+# Install and start the React frontend
+cd BEINUS/beinus
+npm install
+npm run start
+
+```
+
+### 8. Backend setup and run
+
+```bash
+# Move to the project directory, build, and run
+cd /root/go/src/github.com/<your_github_userid>/<your folder>/fabric-samples/fabric2/login/capstone
+chmod +x ./gradlew
+./gradlew build --exclude-task test  # Skip tests and build
+
+# Install and run H2 database if needed
+./gradlew bootRun  # Run the server
+# Note: If H2 installation is not needed, run `./gradlew bootRun` directly.
+
+```
+<br>
 
 ---
 
-## 3. 레파지토리 제출 
 
-- **`[주의]` 레파지토리 제출**은 해당 레파지토리의 ownership을 **학과 계정**으로 넘기는 것이므로 되돌릴 수 없습니다.
-- **레파지토리 제출** 전, 더 이상 수정 사항이 없는지 다시 한번 확인하세요.
-- github 레파지토리에서 Settings > General > Danger zone > Transfer 클릭
-  <img src="https://github.com/user-attachments/assets/cb2361d4-e07e-4b5d-9116-aa80dddd8a8b" alt="소유주 변경 경로" width="500" />
-  
-- [ Specify an organization or username ]에 'PNUCSE'를 입력하고 확인 메세지를 입력하세요.
-  <img src="https://github.com/user-attachments/assets/7c63955d-dcfe-4ac3-bdb6-7d2620575f3a" alt="소유주 변경" width="400" />
 
----
-
-## 4. README.md 가이드 라인
-- README 파일 작성시에 아래의 5가지 항목의 내용은 필수적으로 포함해야 합니다.
-- 아래의 5가지 항목이외에 프로젝트의 이해를 돕기 위한 내용을 추가해도 됩니다.
-- SAMPLE_README.md 이 단순한 형태의 예제이니 참고하세요.
 
 ```markdown
 ### 1. 프로젝트 소개
@@ -72,113 +217,6 @@
 ### 5. 팀 소개
 > 팀원 소개 & 구성원 별 역할 분담 & 간단한 연락처를 작성하세요.
 ```
-
-## 5. README.md 작성팁 
-* 마크다운 언어를 이용해 README.md 파일을 작성할 때 참고할 수 있는 마크다운 언어 문법을 공유합니다.  
-* 다양한 예제와 보다 자세한 문법은 [이 문서](https://www.markdownguide.org/basic-syntax/)를 참고하세요.
-
-### 5.1. 헤더 Header
-```
-# This is a Header 1
-## This is a Header 2
-### This is a Header 3
-#### This is a Header 4
-##### This is a Header 5
-###### This is a Header 6
-####### This is a Header 7 은 지원되지 않습니다.
-```
-<br />
-
-### 5.2. 인용문 BlockQuote
-```
-> This is a first blockqute.
->	> This is a second blockqute.
->	>	> This is a third blockqute.
-```
-> This is a first blockqute.
->	> This is a second blockqute.
->	>	> This is a third blockqute.
-<br />
-
-### 5.3. 목록 List
-* **Ordered List**
-```
-1. first
-2. second
-3. third  
-```
-1. first
-2. second
-3. third
-<br />
-
-* **Unordered List**
-```
-* 하나
-  * 둘
-
-+ 하나
-  + 둘
-
-- 하나
-  - 둘
-```
-* 하나
-  * 둘
-
-+ 하나
-  + 둘
-
-- 하나
-  - 둘
-<br />
-
-### 5.4. 코드 CodeBlock
-* 코드 블럭 이용 '``'
-```
-여러줄 주석 "```" 이용
-"```
-#include <stdio.h>
-int main(void){
-  printf("Hello world!");
-  return 0;
-}
-```"
-
-단어 주석 "`" 이용
-"`Hello world`"
-
-* 큰 따움표(") 없이 사용하세요.
-``` 
-<br />
-
-### 5.5. 링크 Link
-```
-[Title](link)
-[부산대학교 정보컴퓨터공학부](https://cse.pusan.ac.kr/cse/index..do)
-
-<link>
-<https://cse.pusan.ac.kr/cse/index..do>
-``` 
-[부산대학교 정보컴퓨터공학부](https://cse.pusan.ac.kr/cse/index..do)
-
-<https://cse.pusan.ac.kr/cse/index..do>
-<br />
-
-### 5.6. 강조 Highlighting
-```
-*single asterisks*
-_single underscores_
-**double asterisks**
-__double underscores__
-~~cancelline~~
-```
-*single asterisks* <br />
-_single underscores_ <br />
-**double asterisks** <br />
-__double underscores__ <br />
-~~cancelline~~  <br />
-<br />
 
 ### 5.7. 이미지 Image
 ```
