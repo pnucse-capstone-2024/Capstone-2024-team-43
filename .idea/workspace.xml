@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ced76181-f470-45e1-a672-548feaa1363e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/BEINUS" beforeDir="false" afterPath="$PROJECT_DIR$/BEINUS" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BEINUS/beinus/src/components/organisms/BatteryRegisterModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/BEINUS/beinus/src/components/organisms/BatteryRegisterModal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BEINUS/beinus/src/pages/SearchPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/BEINUS/beinus/src/pages/SearchPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BEINUS/beinus/src/services/additional_api.js" beforeDir="false" afterPath="$PROJECT_DIR$/BEINUS/beinus/src/services/additional_api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/capstone" beforeDir="false" afterPath="$PROJECT_DIR$/login/capstone" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/capstone/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/login/capstone/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/capstone/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/login/capstone/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/capstone/src/main/java/jpabook/jpashop/config/CorsMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/login/capstone/src/main/java/jpabook/jpashop/config/CorsMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/capstone/src/main/java/jpabook/jpashop/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/login/capstone/src/main/java/jpabook/jpashop/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/capstone/src/main/java/jpabook/jpashop/domain/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/login/capstone/src/main/java/jpabook/jpashop/domain/UserRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login/capstone/src/main/java/jpabook/jpashop/service/JoinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/login/capstone/src/main/java/jpabook/jpashop/service/JoinService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/node_modules/.bin/mime" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/node_modules/.bin/mime" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-server/node_modules/.bin/proto-loader-gen-types" beforeDir="false" afterPath="$PROJECT_DIR$/api-server/node_modules/.bin/proto-loader-gen-types" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +33,7 @@
     </system>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/login/capstone" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -62,7 +55,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/sangmyeong/blockchain/fabric/battery/fabric-samples/test-network&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/sangmyeong/blockchain/fabric/battery/fabric-samples/test-network2&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -96,6 +89,9 @@
       <workItem from="1730091587165" duration="615000" />
       <workItem from="1730114788511" duration="215000" />
       <workItem from="1730115007543" duration="937000" />
+      <workItem from="1730261776513" duration="655000" />
+      <workItem from="1730264033884" duration="100000" />
+      <workItem from="1730264474675" duration="891000" />
     </task>
     <servers />
   </component>
